@@ -117,6 +117,17 @@ body {
     padding: 5px;;
 }
 
+
+.Logo-trans {
+    transition: all 2.5s;
+}
+
+.Logo-trans:hover {
+  transform:  scale(1.5) rotateY(360deg);
+}
+
+
+
 /* Segunda area del Grid - Main */
 
 /* Uso flexbox y lo defino en columnas para colocar el título arriba y la imagen abajo  */
