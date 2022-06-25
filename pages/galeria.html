@@ -1,101 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería</title>
-    <link rel="shortcut icon" href="tse-pablo.ico">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TSE - Galería</title>
+    <link rel="shortcut icon" href="../media/images/tse-pablo.ico" type="image/x-icon">
 
-<!-- Enlace con la hoja CSS -->
-
-	<link rel="stylesheet" href="../styles.css">
-
+    <!-- Enlace a hoja de estilos CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Enlace a mi CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    <!-- header-->
-    <header class="grid-container"> <!-- Contenedor (padre)-->
-        
-        <!-- Encabezado y menú de navegación -->
+  <body>
+      <header>
 
-		<nav class="cabecera"> <!-- Primer area del Grid - Cabecera (header) -->
-			<ul class="cabecera__lista header_fixed">
-				<li><a href="../index.html"><img  class="Logo" src="../media/images/tse-pablo.ico" alt="TSE Sistemas"></a></li>
-				<li><a class="cabecera__items" href="../index.html">Inicio</a></li>
-				<li><a class="cabecera__items" href="galeria.html">Galería</a></li>
-				<li><a class="cabecera__items" href="servicios.html">Servicios</a></li>
-				<li><a class="cabecera__items" href="soporte.html">Soporte</a></li>
-				<li><a class="cabecera__items" href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-    </header>
-    <!-- fin header-->
+        <!-- Barra de navegación con Bootstrap - La fijo a la parte Superior-->
 
-    <h1 class="gallery__title"  id="backtotop">Galería de fotos</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="w-25" src="../media/images/tse-pablo.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="soporte.html">Soporte</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+
+      </header>
     
-    <!-- sección principal -->
-    <section class="gallery">
+      <!-- Sección principal de la Galería -->
+      <!-- Defino el GRID SYSTEM de Bootstrap -->
 
-        <a class="gallery__items" href="../media/images/KVN.jpeg" target="_blank">
-            <img class="gallery__img" src="../media/images/KVN.jpeg" alt="Manejando autoelevador en la planta de Kevingston">
-        </a>
-        <a class="gallery__items" href="../media/images/rack-dvr.jpeg" target="_blank">
-            <img class="gallery__img" src="../media/images/rack-dvr.jpeg" alt="Rack con DVR Hikvision y UPS">
-        </a>
-        <a class="gallery__items" href="../media/images/sirena-alarma.jpeg" target="_blank">
-            <img class="gallery__img" src="../media/images/sirena-alarma.jpeg" alt="Sirena exterior Garnet en domicilio">
-        </a>
-        <a class="gallery__items" href="../media/images/Torre5-1.jpeg" target="_blank">
-            <img class="gallery__img" src="../media/images/Torre5-1.jpeg" alt="Cámaras de seguridad en Barrio Olímpico">
-        </a>
-        <a class="gallery__items" href="../media/images/Torre5-3.jpeg" target="_blank">
-            <img class="gallery__img" src="../media/images/Torre5-3.jpeg" alt="Cámaras de seguridad en Barrio Olímpico">
-        </a>
-        <a class="gallery__items" href="../media/images/barrera-final.jpeg" target="_blank">
-            <img class="gallery__img" src="../media/images/barrera-final.jpeg" alt="">
-        </a>
-        <a class="gallery__items" href="../media/images/barrera.jpeg" target="_blank">
-            <img class="gallery__img" src="../media/images/barrera.jpeg" alt="">
-        </a>
-        <a class="gallery__items" href="../media/images/garnet-control.jpg" target="_blank">
-            <img class="gallery__img" src="../media/images/garnet-control.jpg" alt="">
-        </a>
-        <a class="gallery__items" href="../media/images/cerradura.jpeg" target="_blank">
-            <img class="gallery__img" src="../media/images/cerradura.jpeg" alt="">
-        </a>
-        <a class="gallery__items" href="../media/images/caja-seg.jpg" target="_blank">
-            <img class="gallery__img" src="../media/images/caja-seg.jpg" alt="">
-        </a>
-        <a class="gallery__items" href="../media/images/control-acceso.jpg" target="_blank">
-            <img class="gallery__img" src="../media/images/control-acceso.jpg" alt="">
-        </a>
-        <a class="gallery__items" href="../media/images/tablet-gDMSS.jpg" target="_blank">
-            <img class="gallery__img" src="../media/images/tablet-gDMSS.jpg" alt="">
-        </a>
-     
-    </section>
-
-    <p class="volver" >
-        <a href="#backtotop"><img class="Logo"  src="../media/images/up.png" alt=" Ir arriba"></a>
-    </p>
-    
-    <!-- fin sección principal-->
-
-    <!-- footer -->
-    <nav class="pie">
-					
-        <ul class="pie__lista">
-            <li><a class="pie__items" href="https://www.facebook.com/" target="_blank"><img class="Logo" src="../media/images/Facebook.png" alt=" Seguinos en Facebook">Facebook</a></li>
-            <li><a class="pie__items" href="https://www.instagram.com/" target="_blank"><img class="Logo"  src="../media/images/instagram.png" alt=" Seguinos en Instagram">@TSESistemas</a></li>
-            <li><a class="pie__items" href="https://wa.me/+54965371221?text=Bienvenido%20a%20TSE%20-%20Chatea%20con%20nosotros" target="_blank"><img class="Logo"  src="../media/images/whatsapp.jpg" alt=" Nuestro WhatsApp">+54 9 11 6537-1221</a></li>
-            <li><img  class="Logo" src="../media/images/tse-pablo.ico" alt="TSE Sistemas"></li>
-            
-        </ul>
-
-    </nav>	
-    
-    <!-- Fin del footer -->
-
+      <main>
+        <section class="container galeria">
+            <div class="text-center pt-3">
+                <!-- TITULO -->
+                <h1>Galería</h1>
+                <h3>Conocé mas acerca de nuestros trabajos</h3>
+            </div>
+            <!-- DEFINO FILAS Y COLUMNAS MOBILE FIRST RESPONSIVE -->
+            <!-- 1 columna para Mobile, 2 columnas para pantallas medianas y 3 columnas para pantallas grandes -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/KVN - copia.jpeg" target="_blank"><img src="../media/images/KVN.jpeg" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/rack-dvr - copia.jpeg" target="_blank"><img src="../media/images/rack-dvr.jpeg" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/barrera - copia.jpeg" target="_blank"><img src="../media/images/barrera.jpeg" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/sirena-alarma - copia.jpeg" target="_blank"><img src="../media/images/sirena-alarma.jpeg" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/caja-seg.jpg" target="_blank"><img src="../media/images/caja-seg.jpg" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/camaras.jpg" target="_blank"><img src="../media/images/camaras.jpg" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/central-garnet.png" target="_blank"><img src="../media/images/central-garnet.png" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/Dahua_TIOC-1.png" target="_blank"><img src="../media/images/Dahua_TIOC-1.png" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/control-acceso.jpg" target="_blank"><img src="../media/images/control-acceso.jpg" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/cerradura.jpeg" target="_blank"><img src="../media/images/cerradura.jpeg" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/garnet.png" target="_blank"><img src="../media/images/garnet.png" alt="Imagenes TSE Sistemas"></a></div>
+                <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/garnetcontrolfuncion.png" target="_blank"><img src="../media/images/garnetcontrol-funcion.png" alt="Imagenes TSE Sistemas"></a></div>
+            </div>
+        </section>
     </main>
+
+    <!-- LOGO ANIMADO DE WHATSAPP -->
+
+    <a href="https://wa.me/1164827807" class="wa-btn animacion" target="_blank">
+      <i class="fa fa-whatsapp icono animacion"></i>
+    </a>
+
+    <!-- FOOTER FIJO A LA PARTE INFERIOR -->
+
+      <footer>
+
+        <nav class="navbar fixed-bottom bg-primary navbar-dark">
+            <div class="container-fluid nav-item">
+                <a class="navbar-brand" href="../index.html">TSE</a>
+                <a href="https://www.facebook.com" target="_blank"><i class="navbar-brand fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="navbar-brand fa-brands fa-instagram"></i></a>
+                <i class="navbar-brand fa-solid fa-copyright"></i>
+                
+                
+            </div>
+    </nav>
+
+      </footer>
+
+      <!-- ENLACES A LIBRERIAS JS DE BOOTSTRAP Y A FONT AWESOME PARA AGREGAR ICONOS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b6c0b7a831.js" crossorigin="anonymous"></script>
 </body>
 </html>
