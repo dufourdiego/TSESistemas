@@ -1,96 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soporte</title>
-    <link rel="shortcut icon" href="../media/images/tse-pablo.ico">
-
-<!-- Enlace con la hoja CSS -->
-
-	<link rel="stylesheet" href="../styles.css">
-
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TSE - Soporte</title>
+    <link rel="shortcut icon" href="../media/images/tse-pablo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+  <body>
+      <header>
 
-<body>
+        <!-- Barra de navegación con Botstrap -->
 
-    <main class="soporte-container">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="w-25" src="../media/images/tse-pablo.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="soporte.html">Soporte</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
 
-            <!-- header-->
-       
-            <header class="soporte-item"> <!-- Contenedor (padre)-->
-               
-               <!-- Encabezado y menú de navegación -->
-       
-               <nav class="cabecera"> <!-- Primer area del Grid - Cabecera (header) -->
-                   <ul class="cabecera__lista header_fixed">
-                       <li><a href="../index.html"><img  class="Logo" src="../media/images/tse-pablo.ico" alt="TSE Sistemas"></a></li>
-                       <li><a class="cabecera__items" href="../index.html">Inicio</a></li>
-                       <li><a class="cabecera__items" href="galeria.html">Galería</a></li>
-                       <li><a class="cabecera__items" href="servicios.html">Servicios</a></li>
-                       <li><a class="cabecera__items" href="soporte.html">Soporte</a></li>
-                       <li><a class="cabecera__items" href="contacto.html">Contacto</a></li>
-                   </ul>
-               </nav>
-           </header>
-       
-           <!-- fin header-->
-            <!-- sección principal -->
-
+      </header>
     
+      <h1 class="pt-5 mt-2">Bienvenido a TSE Sistemas</h1>
 
-        <section class="soporte-item">
-            <h1 id="backtotop" class="soporte-title">Soporte</h1>
-        </section>
-            
+      <a href="https://wa.me/1164827807" class="wa-btn animacion" target="_blank">
+        <i class="fa fa-whatsapp icono animacion"></i>
+      </a>
 
-        <article class="soporte-item soporte1" >
-                <video class="soporte__video" src="../media/videos/Configurar-DVR.mp4" controls></video>
-                <p>Configuración de DVR</p>
-        </article>
+      <footer>
 
-        <article class="soporte-item soporte2" >
-                <iframe class="soporte__video" width="560" height="315" src="https://www.youtube.com/embed/66ZHAkM5HFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>Funciones básicas de la App gDMSS Plus para Android e iDMSS Lite para iPhone</p>
-        </article>
+        <nav class="navbar fixed-bottom bg-primary navbar-dark">
+            <div class="container-fluid nav-item">
+                <a class="navbar-brand" href="../index.html">TSE</a>
+                <a href="https://www.facebook.com" target="_blank"><i class="navbar-brand fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="navbar-brand fa-brands fa-instagram"></i></a>
+                <i class="navbar-brand fa-solid fa-copyright"></i>
+                
+                
+            </div>
+    </nav>
 
-        <h2 class="soporte-item soporte3">Descargas para asistencia remota</h2>
+      </footer>
 
-        <article class="soporte-item soporte4" >
-                <a href="https://www.teamviewer.com/es-mx/" target="_blank"><img class="soporte__logo" src="../media/images/Teamviewer1.png" alt="Soporte remoto con Teamviewer">Descargar Teamviewer</a>
-        </article>
-
-        <article class="soporte-item soporte5" >
-                <a href="https://anydesk.com/es/downloads/" target="_blank"><img class="soporte__logo" src="../media/images/anydesk.png" alt="Soporte remoto con Teamviewer">Descargar Anydesk</a>
-        </article>
-
-        <p class="soporte-item soporte-back volver">
-                <a href="#backtotop"><img class="Logo"  src="../media/images/up.png" alt=" Ir arriba"></a>
-        </p>
-            
-        
-
-    <!-- fin sección principal-->
-
-    <!-- footer -->
-
-    <nav class="pie soporte-footer soporte-item">
-					
-        <ul class="pie__lista">
-            <li><a class="pie__items" href="https://www.facebook.com/" target="_blank"><img class="Logo" src="../media/images/Facebook.png" alt=" Seguinos en Facebook">Facebook</a></li>
-            <li><a class="pie__items" href="https://www.instagram.com/" target="_blank"><img class="Logo"  src="../media/images/instagram.png" alt=" Seguinos en Instagram">@TSESistemas</a></li>
-            <li><a class="pie__items" href="https://wa.me/+54965371221?text=Bienvenido%20a%20TSE%20-%20Chatea%20con%20nosotros" target="_blank"><img class="Logo"  src="../media/images/whatsapp.jpg" alt=" Nuestro WhatsApp">+54 9 11 6537-1221</a></li>
-            <li><img  class="Logo" src="../media/images/tse-pablo.ico" alt="TSE Sistemas"></li>
-            
-        </ul>
-
-    </nav>	
-    
-    <!-- Fin del footer -->
-
-    </main>   
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b6c0b7a831.js" crossorigin="anonymous"></script>
 </body>
 </html>
