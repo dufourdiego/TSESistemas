@@ -1,11 +1,15 @@
+/* Defino color de fondo, posición y padding del body */
+
 body {
     background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4); 
     min-height: 100vh;
     position: relative;
     padding-top: 12vh;
     padding-bottom: 12vh;
-    font-family: 'Roboto', sans-serif;
+    
 }
+
+/* Estilos para las imágenes de la galería */
 
 .galeria img {
     width: 100%;
@@ -15,10 +19,14 @@ body {
     object-fit: cover;
 }
 
+/* Efecto sobre cada imagen al pasar el mouse */
+
 .galeria img:hover {
     border: 4px solid transparent;
     opacity: .6;
 }
+
+/* Creo el círculo para colocar el Logo de Whatsapp abjo a la derecha de cada página */
 
 .wa-btn{
     position:fixed;
@@ -34,13 +42,17 @@ body {
     font-size:40px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     z-index:100;
-    transition: all .5s ease;
-    
+    transition: all .5s ease;   
 }
+
+/* Agrego una transición para invertir el color del Logo al pasar el mouse */
+
 .wa-btn:hover{
     background-color: #FFF;
     color: #20ba5a;
 }
+
+/* Agrego una animación al Logo de Whatsapp para que varíe la transparencia */
 
 .animacion {
     /* Nombre + duración */
