@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4); 
+    min-height: 100vh;
+    position: relative;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.galeria img {
+    width: 100%;
+    height: 35vh;
+    margin: 10px;
+    border: 1px solid rgb(15, 15, 118);
+    object-fit: cover;
+}
+
+.galeria img:hover {
+    border: 4px solid transparent;
+    opacity: .6;
+}
+
+.wa-btn{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:90px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50%;
+    text-align:center;
+    font-size:40px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all .5s ease;
+    
+}
+.wa-btn:hover{
+    background-color: #FFF;
+    color: #20ba5a;
+}
+
+.animacion {
+    /* Nombre + duración */
+    animation: changeLogo 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+/* @ + Nombre de la animación */
+@keyframes changeLogo {
+    0% {
+        opacity: .4;
+    }
+
+    15% {
+        opacity: .5;
+    }
+
+    25% {
+
+        opacity: .6;
+    }
+
+    50% {
+        opacity: .75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
