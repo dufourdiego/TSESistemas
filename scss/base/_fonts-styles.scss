@@ -1,0 +1,21 @@
+/* Tipo de letra para el menú */
+
+.my-font {
+    font-family: 'Orbitron', sans-serif;
+    color: $font-color;
+    opacity: .6;
+    text-decoration: $decoration;
+
+    &:hover {       /* Sombra y transparencia al pasar el mouse por los items del menú*/
+        text-shadow: $font-color;
+        opacity: 1;
+    }
+}
+
+/* Tipo de letra para el footer */
+
+.my-fontp {
+    font-family: 'Nunito', sans-serif;
+    color: $font-color;
+    text-decoration: $decoration;
+}

@@ -1,138 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Orbitron&family=Poppins:ital,wght@0,200;1,400&display=swap');
-
-/* Defino color de fondo, posición y padding del body */
-
-body {
-    background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4); 
-    min-height: 100vh;
-    position: relative;
-    padding-top: 18vh;
-
-}
-
-/* Tipo de letra para el menú */
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Orbitron&family=Poppins:ital,wght@0,200;1,400&display=swap"); /* Tipo de letra para el menú */
 .my-font {
-    font-family: 'Orbitron', sans-serif;
-    color: black;
-    opacity: .6;
-    text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  opacity: 0.6;
+  text-decoration: none;
 }
-
-/* Sombra y transparencia al pasar el mouse por los items del menú*/
-
-.my-font:hover {
-    text-shadow: black;
-    opacity: 1;
-}
-
-/* Página activa - Letras en mayúsculas */
-
-.activa {
-    text-transform: uppercase;
+.my-font:hover { /* Sombra y transparencia al pasar el mouse por los items del menú*/
+  text-shadow: black;
+  opacity: 1;
 }
 
 /* Tipo de letra para el footer */
-
 .my-fontp {
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  text-decoration: none;
 }
 
-/* Colores de barras y botones */
-
-.bg-tse {
-    background-color: #7f7fd5;
+/* Defino color de fondo, posición y padding del body */
+body {
+  background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4);
+  min-height: 100vh;
+  position: relative;
+  padding-top: 18vh;
 }
-.btn-tse {
-    background-color: #7f7fd5;
-}
-
 
 /* Estilos para las imágenes de la galería */
-
 .galeria img {
-    width: 100%;
-    height: 35vh;
-    margin: 10px;
-    border: 1px solid rgb(15, 15, 118);
-    object-fit: cover;
+  width: 100%;
+  height: 35vh;
+  margin: 10px;
+  border: 1px solid rgb(15, 15, 118);
+  object-fit: cover;
 }
-
-/* Efecto sobre cada imagen al pasar el mouse */
-
-.galeria img:hover {
-    border: 4px solid transparent;
-    opacity: .6;
+.galeria img:hover { /* Efecto sobre cada imagen al pasar el mouse */
+  border: 4px solid transparent;
+  opacity: 0.6;
 }
 
 /* Creo el círculo para colocar el Logo de Whatsapp abjo a la derecha de cada página */
-
-.wa-btn{
-    position:fixed;
-    width:60px;
-    height:60px;
-    line-height: 55px;
-    bottom:20px;
-    right:6px;
-    background:#20ba5a;
-    color:white;
-    border-radius:50%;
-    text-align:center;
-    font-size:50px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index:100;
-    transition: all .5s ease;   
+.wa-btn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  bottom: 20px;
+  right: 6px;
+  background: #20ba5a;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 0.5s ease;
 }
-
-/* Agrego una transición para invertir el color del Logo al pasar el mouse */
-
-.wa-btn:hover{
-    background-color: white;
-    color: #20ba5a;
+.wa-btn:hover { /* Agrego una transición para invertir el color del Logo al pasar el mouse */
+  background-color: white;
+  color: #20ba5a;
 }
 
 /* Agrego una animación al Logo de Whatsapp para que varíe la transparencia */
-
 .animacion {
-    /* Nombre + duración */
-    animation: changeLogo 4s;
-    animation-iteration-count: infinite;
-    
+  /* Nombre + duración */
+  animation: changeLogo 4s;
+  animation-iteration-count: infinite;
 }
 
 /* @ + Nombre de la animación */
 @keyframes changeLogo {
-    0% {
-        opacity: .4;
-    }
-
-    15% {
-        opacity: .5;
-    }
-
-    25% {
-
-        opacity: .6;
-    }
-
-    50% {
-        opacity: .75;
-    }
-
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0.4;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 .Logo {
-    width: 3vw;
-    padding: 5px;
+  width: 3vw;
+  padding: 5px;
 }
 
 .my-info {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+/* Página activa - Letras en mayúsculas */
+.activa {
+  text-transform: uppercase;
+}
+
+/* Colores de barras y botones */
+.bg-tse {
+  background-color: #7f7fd5;
+}
+
+.btn-tse {
+  background-color: #7f7fd5;
+}
+
+/*# sourceMappingURL=styles.css.map */
