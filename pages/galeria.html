@@ -1,9 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TSE - Galería</title>
+    <title>TSE - Galería de imágenes | Trabajos realizados</title>
+    <meta name="description" content= "En TSE Sistemas trabajamos con la mejor tecnología. Trabajos realizados en empresas, oficinas y domicilios con personal altamente capacitado" />
+    <meta name="keywords" content="TSE, alarmas, cámaras, galería, Kevingston, Diarco, Garnet, Dahua, Hikvision">
     <link rel="shortcut icon" href="../media/images/tse-pablo.ico" type="image/x-icon">
 
     <!-- Enlace a hoja de estilos CSS de Bootstrap -->
@@ -11,7 +13,8 @@
     
     <!-- Enlace a mi CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-</head>
+  </head>
+  
   <body>
     <header>
 
@@ -20,48 +23,49 @@
       <!-- Agrego el logo y personalizo la fuente -->
 
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-tse">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="w-50" src="../media/images/tse-pablobg.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link my-font" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link activa my-font" href="galeria.html">Galería</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link my-font" href="servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link my-font" href="soporte.html">Soporte</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link my-font" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-              </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="nav-Logo" src="../media/images/tse-pablobg.png" alt="TSE Sistemas logo institucional"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link my-font" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link activa my-font" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link my-font" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link my-font" href="soporte.html">Soporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link my-font" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
+        </div>
       </nav>
 
     </header>
     
-      <!-- Sección principal de la Galería -->
-      <!-- Defino el GRID SYSTEM de Bootstrap -->
+    <!-- Sección principal de la Galería -->
+    <!-- Defino el GRID SYSTEM de Bootstrap -->
 
-      <main>
+    <main>
         <section class="container galeria">
             <div class="text-center pt-3">
+              
                 <!-- TITULO -->
                 <h1>Galería</h1>
-                <h3>Conocé mas acerca de nuestros trabajos</h3>
+                <h2 class="my-fontp">Conocé mas acerca de nuestros trabajos</h2>
             </div>
             <!-- DEFINO FILAS Y COLUMNAS MOBILE FIRST RESPONSIVE -->
             <!-- 1 columna para Mobile, 2 columnas para pantallas medianas y 3 columnas para pantallas grandes -->
-            <div class="row">
+            <article class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/KVN - copia.jpeg" target="_blank"><img src="../media/images/KVN.jpeg" alt="Imagenes TSE Sistemas"></a></div>
                 <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/rack-dvr - copia.jpeg" target="_blank"><img src="../media/images/rack-dvr.jpeg" alt="Imagenes TSE Sistemas"></a></div>
                 <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/barrera - copia.jpeg" target="_blank"><img src="../media/images/barrera.jpeg" alt="Imagenes TSE Sistemas"></a></div>
@@ -74,7 +78,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/cerradura.jpeg" target="_blank"><img src="../media/images/cerradura.jpeg" alt="Imagenes TSE Sistemas"></a></div>
                 <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/garnet.png" target="_blank"><img src="../media/images/garnet.png" alt="Imagenes TSE Sistemas"></a></div>
                 <div class="col-sm-12 col-md-6 col-lg-4"><a href="../media/images/garnetcontrolfuncion.png" target="_blank"><img src="../media/images/garnetcontrol-funcion.png" alt="Imagenes TSE Sistemas"></a></div>
-            </div>
+            </article>
         </section>
     </main>
 
@@ -86,33 +90,32 @@
 
     <!-- FOOTER FIJO A LA PARTE INFERIOR -->
 
-      <!-- FOOTER CON BOOTSTRAP FIJO A LA PARTE INFERIOR DE LA PAGINA -->
+    <!-- FOOTER CON BOOTSTRAP FIJO A LA PARTE INFERIOR DE LA PAGINA -->
 
-      <footer>
+    <footer>
 
-        <nav class="navbar bg-tse">
-            <div class="container-fluid nav-item">
+      <nav class="navbar bg-tse">
+          <div class="container-fluid nav-item">
                 <a class="navbar-brand" href="#">TSE</a>
                 <a href="https://www.facebook.com" target="_blank"><i class="navbar-brand fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com" target="_blank"><i class="navbar-brand fa-brands fa-instagram"></i></a>
                 <a href="https://wa.me/1164827807" target="_blank"></a><i class="navbar-brand fa-brands fa-whatsapp"></i>
                 
-            </div>
-        </nav>
+          </div>
+      </nav>
 
-        <div class="bg-tse ">
+      <div class="bg-tse ">
           <div class="container">
-          <div class="row">
-          <p  class="my-fontp col-12 d-flex justify-content-around">© 2022 TSE Sistemas <a class="my-fontp" href="#"> Términos y condiciones</a><a class="my-fontp" href="#"> Diseño web by D&D </a></p>
-        </div>
-          
-        </div>
-        </div>
+            <div class="row">
+              <p  class="my-fontp col-12 d-flex justify-content-around">© 2022 TSE Sistemas <a class="my-fontp" href="#"> Términos y condiciones</a><a class="my-fontp" href="#"> Diseño web by D&D </a></p>
+            </div>
+          </div>
+      </div>
 
 
-      </footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b6c0b7a831.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

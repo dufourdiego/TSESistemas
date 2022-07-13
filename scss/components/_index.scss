@@ -5,6 +5,41 @@ body {
     min-height: 100vh;
     position: relative;
     padding-top: 18vh;
-
+    
 }
 
+.articulo {
+    width: 25vw;
+    background-color: #FFF;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #7f7fd5;
+    margin-top: 10px;
+  }
+  
+  .tarjeta {
+    padding: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contenedor-flex {
+      @include flexbox(flex, column, center);
+      padding: 5px;
+    }
+    .articulo {
+      width: 65vw;
+    }
+  
+    .wa-btn {
+      bottom: 80px;
+    }
+    }
+  
+  @media screen and (min-width: 769px) {
+  .contenedor-flex {
+    @include flexbox(flex, row, center);
+    padding: 5px;
+    gap: 10px;
+  }
+}
+  

@@ -59,6 +59,17 @@
 }
 
 .Logo {
+    min-width: 35px;
     width: 3vw;
     padding: 5px;
 }
+
+.nav-Logo {
+    width: 5vw;
+    min-width: 60px;
+}
+
+.btn-tse{
+    @extend %botones;
+  }
+  

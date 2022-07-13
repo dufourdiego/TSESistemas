@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Orbitron&family=Poppins:ital,wght@0,200;1,400&display=swap');
 
-@import './base/variables';
-@import './base/fonts-styles';
-@import './components/index';
-@import './components/gallery';
-@import './components/logos';
-@import './components/contact';
+@import 'base/variables';
+@import 'base/fonts-styles';
+@import 'base/extends';
+@import 'base/mixins';
+@import 'base/mapas';
+@import 'components/index';
+@import 'components/gallery';
+@import 'components/logos';
+@import 'components/contact';
 
 /* Página activa - Letras en mayúsculas */
 
@@ -15,10 +18,7 @@
 
 /* Colores de barras y botones */
 
-.bg-tse {
-    background-color: $bg-color;
-}
-.btn-tse {
+.bg-tse, .btn-tse {
     background-color: $bg-color;
 }
 
