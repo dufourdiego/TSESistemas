@@ -3,7 +3,8 @@
 .galeria img {
     width: map-get($estiloscomunes, ancho);
     height: 35vh;
-    margin: map-get($estiloscomunes, margen);
+    margin-right: map-get($estiloscomunes, margen);
+    margin-bottom: map-get($estiloscomunes, margen);
     border: 1px solid rgb(15, 15, 118);
     object-fit: cover;
 
