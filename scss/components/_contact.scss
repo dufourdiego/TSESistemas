@@ -1,0 +1,33 @@
+.mapa {
+    overflow:hidden;
+    padding-bottom:50%;
+    margin-top: 1em;
+    position:relative;
+    
+    & iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:90%;
+        position:absolute;
+        padding-left: map-get($estiloscomunes, separacion);
+    
+    }
+}  
+
+.my-info {
+    @include flexbox(flex, row, flex-start);
+    flex-wrap: wrap;
+    padding-left: map-get($estiloscomunes, separacion);
+
+    @media screen and (min-width: 480px){
+        justify-content: space-around;
+        
+    }
+}
+
+.contact-map {
+    @include flexbox(flex, column, flex-start);
+    padding: 20px 40px;
+  }
+  

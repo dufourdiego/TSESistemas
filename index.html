@@ -1,90 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TSE Sistemas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="media/images/tse-pablo.ico" type="image/x-icon">
-</head>
-<body>
+
+  <!-- Inicio head -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- AGREGO LOS META TAGS -->
+
+    <title>TSE Sistemas - Inicio | Cámaras | Alarmas | Accesos</title>
+    <meta name="description" content= "TSE Sistemas es una empresa dedicada a brindar soluciones personalizadas en seguridad, cámaras, alarmas y control de acceso con más de 15 años de experiencia">
+    <meta name="keywords" content="TSE, alarmas, cámaras, CCTV, cámara IP, HDCVI, HDTVI, AHD, control de acceso, seguridad, monitoreo, redes, informática">
+    <meta property="og:title" content="TSE Sistemas - Inicio">
+    <meta property="og:description" content="TSE Sistemas es una empresa dedicada a brindar soluciones personalizadas en seguridad, cámaras, alarmas y control de acceso con más de 15 años de experiencia">
+    <meta property="og:image" content="https://tsesistemas.000webhostapp.com/media/images/monitorsmall.jpg">
+
+
+    <link rel="shortcut icon" href="../media/images/tse-pablo.ico" type="image/x-icon">
+
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     
-    <!-- Para definir las secciones utilizo GRID creando areas -->
-    
-    <main class="grid-container"> <!-- Contenedor (padre)-->
-        
-        <!-- Encabezado y menú de navegación -->
+    <!-- Enlace a mi CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 
-		<nav class="cabecera"> <!-- Primer area del Grid - Cabecera (header) -->
-			<ul class="cabecera__lista">
-				<li><a href="index.html"><img  class="Logo" src="media/images/tse-pablo.ico" alt="TSE Sistemas"></a></li>
-				<li><a class="cabecera__items" href="index.html">Inicio</a></li>
-				<li><a class="cabecera__items" href="pages/galeria.html">Galería</a></li>
-				<li><a class="cabecera__items" href="pages/servicios.html">Servicios</a></li>
-				<li><a class="cabecera__items" href="pages/soporte.html">Soporte</a></li>
-				<li><a class="cabecera__items" href="pages/contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	
-        <!-- Segunda area del Grid - main (main) -->
+  <!-- Fin head -->
 
-        <section class="main">
+  <body>
 
-            <h1 id="backtotop" class="main__title">
-                Bienvenido a TSE Sistemas
-            </h1>
-                <!-- Imagen principal -->
-        
-                
-                    <img class="main__img" src="media/images/monitor.jpg" alt="Imagen de living monitoreado">
+    <!-- Inicio header -->
 
-        </section>
+    <header>
 
-        <!-- Tercer area del Grid - items (products) -->
+      <!-- Barra de navegación con Botstrap -->
+      <!-- LO FIJO A LA PARTE SUPERIOR -->
+      <!-- Agrego el logo y personalizo la fuente -->
 
-        <section class="items">
-            <h2 id="LaEmpresa" class="items__griditem">La Empresa</h2>
-                <img src="media/images/camaras.jpg" alt="Camaras de seguridad para vigilancia">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-tse">
             
-                <p class="items__griditem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat et pariatur officiis, doloribus doloremque esse blanditiis eius porro aliquam nulla? At, qui! Aspernatur quidem veritatis odio velit totam aperiam veniam?
-                Sed at hic aliquam animi doloribus facere, deleniti magni ab. Sunt quam aut modi laborum. Sequi molestiae aperiam, error, delectus laudantium veniam vel quo itaque asperiores tempore quaerat totam pariatur!
-                Esse veniam id eos voluptates laborum debitis cum deserunt non impedit! Nulla vitae magnam voluptatem expedita officia praesentium mollitia id, quia hic quam? Possimus, nobis maiores ea aliquam totam ipsam!
-                Eius commodi dolores quos inventore natus officia, velit maiores quia iusto, culpa minima impedit itaque labore repudiandae, ex ipsam ea laboriosam rem deserunt molestias error animi accusantium ratione. Repellat, voluptate.
-                Maiores incidunt possimus neque officiis nihil ipsum sed odio velit? Non nihil ut velit impedit ullam expedita accusamus, aliquid eius voluptas, quia itaque totam, pariatur consectetur deleniti suscipit. Libero, quasi?
-                Quibusdam expedita, eos laborum magnam corrupti adipisci itaque doloremque quia excepturi, vero quos sapiente consequuntur magni dolorem fuga minus sit ipsa facilis! Asperiores, natus in repudiandae possimus ullam reprehenderit nulla?
-				</p>
-        </section>
+        <div class="container-fluid">
+              
+          <a class="navbar-brand" href="index.html"><img class="nav-Logo" src="media/images/tse-pablobg.png" alt="TSE Logo institucional"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link activa my-font" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link my-font" href="pages/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link my-font" href="pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link my-font" href="pages/soporte.html">Soporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link my-font" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        <!-- Cuarta area del Grid - publicidad (banner) -->
+    </header>
 
-        <section class="publicidad"><!-- Descripción principal -->
+    <!-- Fin header -->
 
-			<h2>Quienes somos</h2>
-            <img src="media/images/Monitoreo1.jpeg" alt="Monitoreo de camaras y alarmas">
-			<p class="pArticulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae molestiae perspiciatis at quidem. Laborum aperiam cumque explicabo, dolor sed aliquid corrupti nisi assumenda dolorum ut debitis architecto deserunt. Aliquid?
-			Architecto beatae perspiciatis exercitationem quo! Repellat, minus porro distinctio quos id saepe accusamus ut, animi optio, dolor rem tempore obcaecati ad cupiditate nemo  
-			</p>
-        </section>
-       
-       
-        <!-- Quinta area del Grid - pie (footer) -->
-		
-		<nav class="pie">
-					
-			<ul class="pie__lista">
-				<li><a class="pie__items" href="https://www.facebook.com/" target="_blank"><img class="Logo Logo-trans" src="media/images/facebook2.png" alt=" Seguinos en Facebook">Facebook</a></li>
-				<li><a class="pie__items" href="https://www.instagram.com/" target="_blank"><img class="Logo Logo-trans"  src="media/images/ig.png" alt=" Seguinos en Instagram">@TSESistemas</a></li>
-				<li><a class="pie__items" href="https://wa.me/+54965371221?text=Bienvenido%20a%20TSE%20-%20Chatea%20con%20nosotros" target="_blank"><img class="Logo Logo-trans"  src="media/images/Whatsapp2.png" alt=" Nuestro WhatsApp">+54 9 11 6537-1221</a></li>
-                <li><img  class="Logo" src="media/images/tse-pablo.ico" alt="TSE Sistemas"></li>
-				
-			</ul>
+    <!-- SECCIONES -->
+    
+    <!-- GRID SYSTEM -->
 
-		</nav>			
-		
+    <!-- Clase contenedora - Agrego padding para separar el navbar del cuerpo principal de mi página -->
+    <section class="container pt-2 pb-4">
         
-        
-    </main>
+      <!-- Defino la Fila -->
+      <div class="row">
+        <!-- Defino 1 columna para Mobile y 2 columnas para pantallas medianas y grandes -->
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <img class="w-75" src="media/images/tse-logo-bg.png" alt="Logo TSE Sistemas de Seguridad">
 
-    </body>
+          <h1 class="pt-2">La Empresa</h1>
+          
+          <p>
+            Nuestra empresa se caracteriza por una estrategia basada en la atención personalizada de nuestros clientes y con énfasis logramos distinguirnos por una trayectoria de más de 15 años en donde se conjuga el profesionalismo, la eficiencia y la excelencia de nuestros servicios.
+          </p>
+        </div>
+         
+        
+    
+        <!-- Defino 1 columna para Mobile y 2 columnas para pantallas medianas y grandes -->
+    
+    
+        
+      
+        <!-- CAROUSEL CON BOOTSTRAP -->
+
+        
+        <div class="col-sm-12 col-md-6 col-lg-7">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="media/images/Monitoreo-small.jpg" class="d-block w-100" alt="Vigilador en sala de monitoreo controlando cámaras de seguridad">
+              </div>
+              <div class="carousel-item">
+                <img src="media/images/monitorsmall.jpg" class="d-block w-100" alt="Tablet mostrando App de monitoreo de cámaras en Living">
+              </div>
+              <div class="carousel-item">
+                <img src="media/images/soluciones-small.jpg" class="d-block w-100" alt="Soluciones tecnológicas en Sistemas de Alarmas">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"   data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+      
+    <section class="contenedor-flex">
+        
+       
+          
+      <article class="articulo">
+    
+        <img src="media/images/garnet.png" class="card-img-top w-100" alt="Kit de alarma para domicilio Garnet">
+        <div class="tarjeta">
+          <h5>Seguridad</h5>
+          <p>Trabajamos permanentemente en la prevención, realizando para ello estudios de seguridad que nos permiten evaluar el tipo de protección que se deberá aplicar de acuerdo a las características del objetivo a cubrir.</p>
+          <a href="pages/servicios.html" class="btn btn-tse">Mas...</a>
+        </article>
+        
+      </div>
+
+      <article class="articulo">
+
+        <img src="media/images/camaras-hik.jpg" class="card-img-top w-100" alt="Cámaras Hikvision exteriores">
+        <div class="tarjeta">
+          <h5>Confianza</h5>
+          <p class="card-text">Compromiso con el Cliente - Especialización en nuevas tecnologías - Adaptabilidad - Equipos mundialmente reconocidos - Personal altamente calificado.</p>
+          <a href="pages/soporte.html" class="btn btn-tse">Mas...</a>
+        </div>
+      </article>
+    
+
+      <article class="articulo">
+
+        <img src="media/images/control-acceso.jpg" class="card-img-top w-100" alt="Control de acceso reloj fichador">
+        <div class="tarjeta">
+          <h5>Respaldo</h5>
+          <p class="card-text">Contacto permanente con el Cliente - Asesoramiento de Post Venta - Confidencialidad - Profesionalismo.</p>
+          <a href="pages/contacto.html" class="btn btn-tse">Mas...</a>
+        </div>
+        
+      </article>
+    </section>
+
+    <!-- LOGO ANIMADO FIJO FLOTANTE DE WHATSAPP ABAJO A LA DERECHA -->
+      
+    <a href="https://wa.me/1164827807" class="wa-btn animacion" target="_blank">
+      <i class="fa fa-whatsapp icono animacion"></i>
+    </a>
+
+
+    <!-- FOOTER CON BOOTSTRAP FIJO A LA PARTE INFERIOR DE LA PAGINA -->
+
+    <footer>
+
+      <nav class="navbar bg-tse">
+        <div class="container-fluid nav-item">
+          <a class="navbar-brand" href="#">TSE</a>
+          <a href="https://www.facebook.com" target="_blank"><i class="navbar-brand fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="navbar-brand fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/1164827807" target="_blank"><i class="navbar-brand fa-brands fa-whatsapp"></i></a>
+                
+        </div>
+      </nav>
+
+      <div class="bg-tse ">
+        <div class="container">
+        <div class="row">
+        <p  class="my-fontp col-12 d-flex justify-content-around">© 2022 TSE <a class="my-fontp" href="#"> Términos y condiciones</a></p>
+      </div>
+          
+    
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b6c0b7a831.js" crossorigin="anonymous"></script>
+
+  </body>
 </html>

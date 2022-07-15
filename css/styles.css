@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Orbitron&family=Poppins:ital,wght@0,200;1,400&display=swap"); /* Tipo de letra para el menú */
+/*Utilizo el extend _estilodefuente*/
+.my-font {
+  font-family: "Orbitron", sans-serif;
+  opacity: 0.6;
+}
+.my-font:hover { /* Sombra y transparencia al pasar el mouse por los items del menú*/
+  text-shadow: black;
+  opacity: 1;
+}
+
+/* Tipo de letra para el footer */
+.my-fontp {
+  font-family: "Nunito", sans-serif;
+}
+
+.my-font, .my-fontp {
+  color: black;
+  text-decoration: none;
+}
+
+.btn-tse {
+  width: 8vw;
+  min-width: 80px;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Defino color de fondo, posición y padding del body */
+body {
+  background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4);
+  min-height: 100vh;
+  position: relative;
+  padding-top: 18vh;
+}
+
+.articulo {
+  width: 25vw;
+  background-color: #FFF;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid #7f7fd5;
+  margin-top: 10px;
+}
+
+.tarjeta {
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+  }
+  .articulo {
+    width: 80vw;
+    min-width: 200px;
+  }
+  .wa-btn {
+    bottom: 80px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .contenedor-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    gap: 10px;
+  }
+}
+/* Estilos para las imágenes de la galería */
+.galeria img {
+  width: 100%;
+  height: 35vh;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(15, 15, 118);
+  object-fit: cover;
+}
+.galeria img:hover { /* Efecto sobre cada imagen al pasar el mouse */
+  border: 4px solid transparent;
+  opacity: 0.6;
+}
+
+/* Creo el círculo para colocar el Logo de Whatsapp abjo a la derecha de cada página */
+.wa-btn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  bottom: 100px;
+  right: 6px;
+  background: #20ba5a;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+.wa-btn:hover { /* Agrego una transición para invertir el color del Logo al pasar el mouse */
+  background-color: white;
+  color: #20ba5a;
+}
+
+/* Agrego una animación al Logo de Whatsapp para que varíe la transparencia */
+.animacion {
+  /* Nombre + duración */
+  animation: changeLogo 4s;
+  animation-iteration-count: infinite;
+}
+
+/* @ + Nombre de la animación */
+@keyframes changeLogo {
+  0% {
+    opacity: 0.4;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Logo {
+  min-width: 35px;
+  width: 3vw;
+  padding: 5px;
+}
+
+.nav-Logo {
+  width: 5vw;
+  min-width: 60px;
+}
+
+.mapa {
+  overflow: hidden;
+  padding-bottom: 50%;
+  margin-top: 1em;
+  position: relative;
+}
+.mapa iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 90%;
+  position: absolute;
+  padding-left: 20px;
+}
+
+.my-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+@media screen and (min-width: 480px) {
+  .my-info {
+    justify-content: space-around;
+  }
+}
+
+.contact-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 40px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Página activa - Letras en mayúsculas */
+.activa {
+  text-transform: uppercase;
+}
+
+/* Colores de barras y botones */
+.bg-tse, .btn-tse {
+  background-color: #7f7fd5;
+}
+
+/*# sourceMappingURL=styles.css.map */

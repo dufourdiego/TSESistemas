@@ -1,92 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="shortcut icon" href="tse-pablo.ico">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TSE - Contacto | Comunicate con nosotros</title>
+    <meta name="description" content= "TSE Sistemas se encuentra en Ing. MAschwitz, zona Norte de Buenos Aires. Contactate y recibirás atención personalizada, presupuestos sin cargo y asesoramiento 100% profesional">
+    <meta name="keywords" content="TSE, contacto, asesoramiento, alarmas, cámaras, Maschwitz">
+    <link rel="shortcut icon" href="../media/images/tse-pablo.ico" type="image/x-icon">
+  
+    <!-- Agrego link a hoja de estilos de CSS de Bootstrap -->
 
-<!-- Enlace con la hoja CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Agrego link a mi hoja de estilos de CSS-->
 
-<link rel="stylesheet" href="../styles.css">
-
-
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+  <body>
+    <header>
 
-<body>
+      <!-- Barra de navegación con Botstrap -->
+      <!-- LO FIJO A LA PARTE SUPERIOR -->
+      <!-- Agrego el logo y personalizo la fuente -->
 
-    <main class="contacto-container">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-tse">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="nav-Logo" src="../media/images/tse-pablobg.png" alt="Logo institucional TSE Sistemas"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link my-font" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link my-font" href="galeria.html">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link my-font" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link my-font" href="soporte.html">Soporte</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link activa my-font" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </nav>
 
-            <!-- header-->
-       
-            <header class="contacto-item contacto-header"> <!-- Contenedor (padre)-->
-               
-               <!-- Encabezado y menú de navegación -->
-       
-               <nav class="cabecera"> <!-- Primer area del Grid - Cabecera (header) -->
-                   <ul class="cabecera__lista header_fixed">
-                       <li><a href="../index.html"><img  class="Logo" src="../media/images/tse-pablo.ico" alt="TSE Sistemas"></a></li>
-                       <li><a class="cabecera__items" href="../index.html">Inicio</a></li>
-                       <li><a class="cabecera__items" href="galeria.html">Galería</a></li>
-                       <li><a class="cabecera__items" href="servicios.html">Servicios</a></li>
-                       <li><a class="cabecera__items" href="soporte.html">Soporte</a></li>
-                       <li><a class="cabecera__items" href="contacto.html">Contacto</a></li>
-                   </ul>
-               </nav>
-           </header>
-       
-           <!-- fin header-->
-
-    <!-- sección principal -->
+    </header>
     
-    <h1 class="contacto-item contacto-title">Contactanos</h1>
+      
+    <!-- SECCION PRINCIPAL
+      
+    DEFINO EL GRID SYSTEM -->
 
-    <section class="contacto-item contacto-logo">
-        <img src="../media/images/TSE-Logo.jpg" alt="Logo de TSE Sistemas">
-    </section>
+    <section class="container pt-4 pb-4">
+        <!-- Defino la Fila -->
+        <div class="row">
+          <!-- Defino 1 columna para Mobile y 2 columnas para pantallas medianas y grandes -->
+          <div class="col-sm-12 col-md-6 col-lg-5">
+            <img class="w-75" src="../media/images/tse-logo-bg.png" alt="Logo institucional TSE Sistemas">
 
-    <section class="contacto1">
-        <form class="contact-form">
-            <b class="contactform">Nombre</b><input type="text">
-            <b class="contactform">Email</b><input type="email">
-            <b class="contactform">Teléfono</b><input type="number">
-            <b class="contactform">Mensaje</b><input type="text">
-            <b>Enviar</b>
-            <input type="submit">
-        </form>
-    </section>
-        
-    <section class="contacto-item contacto2">
-            <a href="https://goo.gl/maps/d5VDwuJxQSMwTazo7" target="_blank"><b>Cómo llegar</b></a>
-    </section>
-
-    <section class="contacto-item contacto3">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.3128625987797!2d-58.75028688505956!3d-34.39339295390625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f8547083949%3A0xb0fe9aa713b84d48!2sPerito%20Moreno%201172%2C%20B1623BZO%20Maquinista%20Savio%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2spy!4v1654465573503!5m2!1ses!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <section class="contacto-item contacto4">
-        <p>Pablo A. Loureiro</p>
-        <p>Perito Moreno 1172</p>
-        <p>Ing. Maschwitz - Buenos Aires</p>
-    </section>
-    <!-- fin sección principal-->
-    <!-- footer -->
-    
-    <nav class="pie contacto-footer contacto-item">
-        
-        <ul class="pie__lista">
-            <li><a class="pie__items" href="https://www.facebook.com/" target="_blank"><img class="Logo" src="../media/images/Facebook.png" alt=" Seguinos en Facebook">Facebook</a></li>
-            <li><a class="pie__items" href="https://www.instagram.com/" target="_blank"><img class="Logo"  src="../media/images/instagram.png" alt=" Seguinos en Instagram">@TSESistemas</a></li>
-            <li><a class="pie__items" href="https://wa.me/+54965371221?text=Bienvenido%20a%20TSE%20-%20Chatea%20con%20nosotros" target="_blank"><img class="Logo"  src="../media/images/whatsapp.jpg" alt=" Nuestro WhatsApp">+54 9 11 6537-1221</a></li>
-            <li><img  class="Logo" src="../media/images/tse-pablo.ico" alt="TSE Sistemas"></li>
+            <!-- TITULO -->
+            <h1 class="pt-4">Contactanos</h1>
             
-        </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULARIO DE CONTACTO -->
+      
+      <form class="ms-5 w-50">
+        <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre y apellido">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="teléfono">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <button type="submit" class="btn btn-tse mt-3">Enviar</button>
+      </form>
+
+
+
+
+      <section class="contact-map">
+       
+        <!-- Defino la Fila 
+        <div class="row"> -->
+          
+          <!-- Defino 1 columna para Mobile y 2 columnas para pantallas medianas y grandes-->
+          
+          <div>
+
+            <a class="my-fontp pl-3" href="https://goo.gl/maps/d5VDwuJxQSMwTazo7" target="_blank"><b>Cómo llegar</b></a>
+    
+          </div>    
+
+          <!-- Inserto mapa de Google maps con la ubicacion -->
+
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.3128625987797!2d-58.75028688505956!3d-34.39339295390625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f8547083949%3A0xb0fe9aa713b84d48!2sPerito%20Moreno%201172%2C%20B1623BZO%20Maquinista%20Savio%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2spy!4v1654465573503!5m2!1ses!2spy" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </section>
         
-    </nav>	
+      <section>
+
+          <div class="col-6 my-info pt-4">
+            <p>Pablo A. Loureiro</p>
+            <p>Perito Moreno 1172</p>
+            <p>Ing. Maschwitz - Buenos Aires</p>
+          </div>
+        </div>
     
-    <!-- Fin del footer -->
+      </section>
+
+      <!-- Logo animado de Whatsapp -->
     
-</main>
-</body>
+      <a href="https://wa.me/1164827807" class="wa-btn animacion" target="_blank">
+        <i class="fa fa-whatsapp icono animacion"></i>
+      </a>
+        
+        
+      <!-- fin sección principal-->
+
+      <footer>
+
+        <nav class="navbar bg-tse">
+            <div class="container-fluid nav-item">
+                <a class="navbar-brand" href="#">TSE</a>
+                <a href="https://www.facebook.com" target="_blank"><i class="navbar-brand fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="navbar-brand fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/1164827807" target="_blank"></a><i class="navbar-brand fa-brands fa-whatsapp"></i>
+                
+            </div>
+        </nav>
+
+        <div class="bg-tse ">
+          <div class="container">
+            <div class="row">
+              <p  class="my-fontp col-12 d-flex justify-content-around">© 2022 TSE Sistemas <a class="my-fontp" href="#"> Términos y condiciones</a><a class="my-fontp" href="#"> Diseño web by D&D </a></p>
+            </div>
+          
+          </div>
+        </div>
+
+
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/b6c0b7a831.js" crossorigin="anonymous"></script>
+    </body>
 </html>
