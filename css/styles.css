@@ -101,12 +101,12 @@ body {
   opacity: 0.6;
 }
 
-/* Creo el círculo para colocar el Logo de Whatsapp abjo a la derecha de cada página */
 .wa-logo {
   width: 70px;
   position: fixed;
   right: 10px;
   bottom: 100px;
+  z-index: 500;
 }
 
 .wa-logo2 {
@@ -141,8 +141,8 @@ body {
   }
 }
 .Logo {
-  min-width: 35px;
-  width: 3vw;
+  min-width: 40px;
+  width: 4vw;
   padding: 5px;
 }
 
