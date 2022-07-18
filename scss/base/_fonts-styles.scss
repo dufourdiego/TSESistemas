@@ -19,3 +19,11 @@
     font-family: 'Nunito', sans-serif;
     @extend %estilodefuente;
 }
+
+.my-font2 {
+    text-decoration: none;
+    list-style: none ;
+    padding-left: 20px;
+    color: black;
+    font-size: 1.3em;
+}

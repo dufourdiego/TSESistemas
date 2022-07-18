@@ -31,10 +31,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link my-font" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link my-font" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link activa my-font" href="galeria.html">Galería</a>
+                <a class="nav-link activa my-font" aria-current="page" href="galeria.html">Galería</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link my-font" href="servicios.html">Servicios</a>
@@ -56,13 +56,34 @@
     <!-- Defino el GRID SYSTEM de Bootstrap -->
 
     <main>
-        <section class="container galeria">
+        
             <div class="text-center pt-3">
               
                 <!-- TITULO -->
                 <h1>Galería</h1>
-                <h2 class="my-fontp">Conocé mas acerca de nuestros trabajos</h2>
+
+                <div class="col-sm-12">
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../media/images/cctv2.jpg" class="d-block w-100" alt="Alarma Garnet">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../media/images/tablet-gDMSS.jpg" class="d-block w-100" alt="Alarma Garnet">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../media/images/Monitoreo2.jpeg" class="d-block w-100" alt="Alarma Garnet">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+                <h2 class="my-fontp text-center pt-4 p-b-4">Conocé mas acerca de nuestros trabajos</h2>
             </div>
+
+            <section class="container galeria">
             <!-- DEFINO FILAS Y COLUMNAS MOBILE FIRST RESPONSIVE -->
             <!-- 1 columna para Mobile, 2 columnas para pantallas medianas y 3 columnas para pantallas grandes -->
             <article class="row">
@@ -84,8 +105,8 @@
 
     <!-- LOGO ANIMADO DE WHATSAPP -->
 
-    <a href="https://wa.me/1164827807" class="wa-btn animacion" target="_blank">
-      <i class="fa fa-whatsapp icono animacion"></i>
+    <a href="https://wa.me/+5491165371221" class="wa-btn animacion" target="_blank">
+      <img class="wa-logo" src="../media/images/wa-png.png" alt="">
     </a>
 
     <!-- FOOTER FIJO A LA PARTE INFERIOR -->
@@ -96,7 +117,7 @@
 
       <nav class="navbar bg-tse">
           <div class="container-fluid nav-item">
-                <a class="navbar-brand" href="#">TSE</a>
+                <a class="navbar-brand" href="../index.html">TSE</a>
                 <a href="https://www.facebook.com" target="_blank"><i class="navbar-brand fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com" target="_blank"><i class="navbar-brand fa-brands fa-instagram"></i></a>
                 <a href="https://wa.me/1164827807" target="_blank"></a><i class="navbar-brand fa-brands fa-whatsapp"></i>
@@ -107,7 +128,7 @@
       <div class="bg-tse ">
           <div class="container">
             <div class="row">
-              <p  class="my-fontp col-12 d-flex justify-content-around">© 2022 TSE Sistemas <a class="my-fontp" href="#"> Términos y condiciones</a><a class="my-fontp" href="#"> Diseño web by D&D </a></p>
+              <p  class="my-fontp col-12 d-flex justify-content-around">© 2022 TSE <a class="my-fontp" href="#"> Términos y condiciones</a></p>
             </div>
           </div>
       </div>

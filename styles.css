@@ -1,0 +1,603 @@
+/* Fuente importada de google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* Reseteo de CSS - Quito el padding y margin
+Quito el estilo de la lista desordenada y el subrayado de los enlaces
+Elijo la fuente a utilizar*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+        
+}
+
+/* Coloco una imagen de fondo para todas las páginas */
+
+body {
+    background-image: url(media/images/wallpaper.jpg);
+}
+
+/* Primera página - INDEX:HTML */
+
+/* ------------------------------------------------------- */
+/* FULL RESPONSIVE - USO MEDIA QUERY PARA AJUSTAR PANTALLA */
+/* ------------------------------------------------------- */
+
+/* Habilito Grid en el contenedor para pantallas mayores a 720px*/
+
+@media only screen and (min-width:720px) {
+
+    .grid-container {
+        display: grid;
+        /* padding-top: 10vh; Le doy un padding al borde superior para separarlo del menú (que es fixed) */
+    
+        /* Defino las filas de la página principal*/
+
+        grid-template-rows: repeat(5, auto);
+
+        /* Defino las columnas de la página principal */
+
+        grid-template-columns: repeat(3, 1fr);
+
+        /* Espacio entre celdas */
+
+        gap: 5px;
+
+        /* Defino el grid usando AREAS */
+
+        grid-template-areas: 
+        "header header header"
+        "main main banner"
+        "products products banner"
+        "products products banner"
+        "footer footer footer";
+
+        height: 100%;
+    }
+
+    .items img {
+        width: 80%;
+        height: 90%;
+        border-radius: 5%;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+}
+
+/* Asigno el nombre de cada area a la clase correspondiente */
+
+/* Primer area - Cabecera  */
+/*Lo fijo en la parte superior */
+
+.cabecera {
+    grid-area: header;
+    background-color: rgb(36, 36, 80);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    
+}
+
+/* Utilizo flexbox para orientar el nav de forma horizontal */
+
+.cabecera__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(36, 36, 80);
+}
+
+/* Defino el tamaño y color de los items del menú nav  */
+
+.cabecera__items {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* Al pasar el cursor sobre un item del menú cambia de color */
+
+.cabecera__items:hover {
+    color: rgb(41, 179, 203);
+}
+
+/* Tamaño de los logos: flexibles al ancho de pantalla */
+
+.Logo {
+    width: 3vw;
+    padding: 5px;;
+}
+
+
+.Logo-trans {
+    transition: all 2.5s;
+}
+
+.Logo-trans:hover {
+  transform:  scale(1.5) rotateY(360deg);
+}
+
+
+
+/* Segunda area del Grid - Main */
+
+/* Uso flexbox y lo defino en columnas para colocar el título arriba y la imagen abajo  */
+.main {
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    color: rgb(36, 36, 80);
+    align-items: center;
+    padding: 10px;
+}
+
+/* Propiedades del título principal - Asigno un tamaño flexible */
+
+.main__title {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+/* Propiedades de la imagen principal
+ Alto y ancho lo ajusto a un % del contenedor y redondeo los bordes*/
+
+.main img {
+    width: 95%;
+    height: 95%;
+    border-radius: 5%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+/* Tercer area del Grid - Items */
+
+/* Uso flexbox y lo defino en columnas para colocar el título arriba y la imagen abajo  */
+
+.items {
+    display: flex;
+    flex-direction: column;
+    grid-area: products;
+    color: rgb(36, 36, 80);
+    align-items: center;
+    padding: 10px;
+}
+
+.items h2 {
+    font-size: 2vw;
+}
+
+/* Propiedades de la imagen 
+ Alto y ancho lo ajusto a un % del contenedor y redondeo los bordes*/
+
+.items img {
+    width: 95%;
+    height: 90%;
+    border-radius: 5%;
+    object-fit: cover;
+    padding: 10px;
+
+    
+}
+
+/* Cuarta area del Grid - Publicidad */
+
+/* Uso flexbox y lo defino en columnas para colocar el título arriba y la imagen abajo  */
+
+.publicidad {
+    display: flex;
+    flex-direction: column;
+    grid-area: banner;
+    color: rgb(36, 36, 80);
+    align-items: center;
+    padding: 10px;
+}
+
+.publicidad h2 {
+    font-size: 2vw;
+}
+
+/* Propiedades de la imagen 
+ Alto y ancho lo ajusto a un % del contenedor y redondeo los bordes*/
+
+.publicidad img {
+    width: 95%;
+    height: 50%;
+    border-radius: 5%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+/* Quinta area del Grid - Pie */   
+
+.pie {
+    grid-area: footer;
+    background-color: rgb(36, 36, 80);
+    width: 100%;
+}
+
+/* Utilizo flexbox para orientar el nav de forma horizontal */
+
+.pie__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Propiedades de texto para el footer */
+
+.pie__items {
+    font-size: 1.5vw;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+/* Defino el tamaño de letra para los párrafos */
+
+.main p, .publicidad p, .items p {
+    font-size: 1.4vw;
+    padding: 10px;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Segunda página - GALERIA.HTML */
+
+/* ----------------------------------------------------------------------------- */
+
+/* Fijo el menú en la parte superior y alineo los items horizontalmente con Flex*/
+
+.header_fixed {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Defino el tamaño de letra para el título y lo centro  */
+
+.gallery__title {
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.gallery__img {
+    width: 75%;
+    height: 85%;
+    border: 1px solid rgb(12, 0, 51);
+    object-fit: cover;
+    
+}
+
+/* ------------------------------------------------------- */
+/* FULL RESPONSIVE - USO MEDIA QUERY PARA AJUSTAR PANTALLA */
+/* ------------------------------------------------------- */
+
+/* Armo el Grid para pantallas mayores a 720px*/
+
+@media only screen and (min-width:720px) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-rows: repeat(4, auto);
+        grid-auto-flow: dense;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    /* Propiedades de las imágenes 
+    Ancho y alto total del contenedor  */
+
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(12, 0, 51);
+        object-fit: cover;
+    }
+}
+
+/* Al pasar el mouse sobre cada imagen cambia la transparencia */
+
+.gallery__img:hover {
+    opacity: .6;
+}
+
+/* Modifico el area de las imágenes mas grandes para que ocupen más de 1 celda */
+
+.gallery__items:nth-child(8) {
+    grid-column: 3 / 5;
+}
+
+.gallery__items:nth-child(9) {
+    grid-row: 3 / 5;
+}
+
+.gallery__items:nth-child(10) {
+    grid-column: 2 / 5;
+}
+
+/* Centro el botón de Volver arriba */
+
+.volver {
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------------------*/ 
+
+/*Tercera página - SERVICIOS.HTML */
+
+.serv-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+/* ------------------------------------------------------- */
+/* FULL RESPONSIVE - USO MEDIA QUERY PARA AJUSTAR PANTALLA */
+/* ------------------------------------------------------- */
+
+/* Para pantallas de más de 720px armo la grilla con Grid */
+
+@media only screen and (min-width:720px) {
+
+    .serv-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        grid-template-rows: 50px repeat(4, auto) 50px 50px;
+        padding-top: 10px;
+    
+    }
+
+    /* Defino cuántas filas y columnas ocupará cada celda */
+
+    .serv-title {
+        grid-column: 1 / span 3;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .serv-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap:10px;
+
+    }
+
+    .alarm {
+        grid-column: 1 / span 3;
+        grid-row: 3 / 4;
+        padding: 10px;
+    }
+
+    .cam {
+        flex-direction: row-reverse;
+        grid-column: 1 / span 3;
+        grid-row: 4 / 5;
+        padding: 10px;
+    }
+
+    .door {
+        grid-column: 1 / span 3;
+        grid-row: 5 / 6;
+        padding: 10px;
+    }   
+
+    .serv-back {
+        grid-column: 1 / span 3;
+        grid-row: 6 / 7;
+    }
+
+    .serv-footer {
+        display: flex;
+        grid-column: 1 / span 3;
+        grid-row: 7 / 8;
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Cuarta página - SOPORTE.HTML */
+
+/* Para pantallas de menos de 720px cada sección se ve una por debajo de la otra
+Utilizo FlexBox con Wrap habilitado */
+
+.soporte-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
+
+.soporte-title {
+    display: flex;
+    justify-content: center;
+    padding-top:  30px;
+
+}
+
+
+.soporte__video {
+    width: 80vw; 
+    height: 90vh;
+}
+
+/* ------------------------------------------------------- */
+/* FULL RESPONSIVE - USO MEDIA QUERY PARA AJUSTAR PANTALLA */
+/* ------------------------------------------------------- */
+
+/* Para pantallas de más de 720px armo la grilla con Grid */
+
+@media only screen and (min-width:720px) {
+
+    .soporte-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-rows: 50px repeat(6, auto) 50px 50px;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 40px;
+        gap: 10px;
+    }
+
+    /* Los items de la grilla los manejo con Flexbox para alinearlos */
+
+    .soporte-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap:10px;
+    }
+
+    /* Defino cuántas filas y columnas ocupará cada celda */
+
+    .soporte-title {
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .soporte1 {
+        grid-column: 1 / span 2;
+        grid-row: 3 / 4;  
+    }
+    
+    .soporte__video {
+        width: 50vw; 
+        height: 80vh;
+    }
+
+    .soporte2 {
+        grid-column: 1 / span 2;
+        grid-row: 4 / 5;   
+        flex-direction: row-reverse;
+    }
+
+    .soporte3 {
+        grid-column: 1 / span 2;
+        grid-row: 5 / 6;   
+    }
+
+    .soporte4 {
+        grid-column: 1 / span 2;
+        grid-row: 6 / 7;   
+    }
+    
+    .soporte5 {
+        grid-column: 1 / span 2;
+        grid-row: 7 / 8;   
+    }
+
+    .soporte-back {
+        grid-column: 1 / span 2;
+        grid-row: 8 / 9;   
+    }
+
+    .soporte-footer {
+        grid-column: 1 / span 2;
+        grid-row: 9 / 10;   
+    }
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+/* Quinta página - CONTACTO.HTML */
+
+/* Armo la grilla con Grid - Defino filas y columnas */
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: 50px repeat(6, auto) 50px 50px;
+    /* width: 100vw; */
+    height: 100vh;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+/* Defino cuántas filas y columnas ocupará cada celda */
+
+.contacto-title {
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contacto-logo {
+    grid-column: 1 / span 2;
+    grid-row: 3 / 4; 
+    flex-direction: column; 
+    padding: 10px;
+    
+}
+
+.contacto-logo img {
+    width: 60vw;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+
+.contacto1 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / 5;   
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+.contacto2 {
+    grid-column: 1 / span 2;
+    grid-row: 5 / 6;   
+    padding: 10px;
+}
+
+.contacto3 {
+    grid-column: 1 / span 2;
+    grid-row: 6 / 7;   
+    padding-left: 10px ;
+}
+    
+
+.contacto4 {
+    grid-column: 1 / span 2;
+    grid-row: 8 / 9;  
+    padding-left: 10px;
+}
+
+.contacto-footer {
+    grid-column: 1 / span 2;
+    grid-row: 9 / 10;   
+}

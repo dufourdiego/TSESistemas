@@ -5,7 +5,8 @@
     height: 35vh;
     margin-right: map-get($estiloscomunes, margen);
     margin-bottom: map-get($estiloscomunes, margen);
-    border: 1px solid rgb(15, 15, 118);
+    border: 2px solid white;
+    border-radius: 20px;
     object-fit: cover;
 
     &:hover {       /* Efecto sobre cada imagen al pasar el mouse */

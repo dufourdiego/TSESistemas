@@ -2,9 +2,9 @@
 
 body {
     background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4); 
-    min-height: 100vh;
     position: relative;
-    padding-top: 18vh;
+    min-height: 100vh;
+    padding-top: 100px;
     
 }
 
@@ -12,13 +12,19 @@ body {
     width: 25vw;
     background-color: #FFF;
     margin: auto;
-    padding: 5px;
+    padding: 7px;
     border: 1px solid #7f7fd5;
+    border-radius: 10px;
     margin-top: 10px;
+
+    & img {
+      border-radius: 10px;
+
+    }
   }
   
   .tarjeta {
-    padding: 5px;
+    padding: 10px;
   }
   
   @media screen and (max-width: 768px) {
