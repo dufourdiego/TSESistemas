@@ -101,12 +101,16 @@ body {
   opacity: 0.6;
 }
 
+.zindex {
+  z-index: 0 !important;
+}
+
 .wa-logo {
   width: 70px;
   position: fixed;
   right: 10px;
   bottom: 100px;
-  z-index: 500;
+  z-index: 1500;
 }
 
 .wa-logo2 {
