@@ -94,7 +94,7 @@ body {
   width: 60px;
   height: 60px;
   line-height: 55px;
-  bottom: 100px;
+  bottom: 120px;
   right: 6px;
   background: #20ba5a;
   color: white;
@@ -179,6 +179,17 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 40px;
+}
+
+.contacto {
+  width: 40vw;
+  margin: auto;
+}
+
+.contacto-img {
+  width: 30vw;
+  max-width: 400px;
+  object-fit: cover;
 }
 
 * {
