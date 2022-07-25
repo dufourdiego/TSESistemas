@@ -172,6 +172,7 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
   padding-left: 20px;
   font-size: 1em;
   padding: 20px;

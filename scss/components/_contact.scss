@@ -22,6 +22,7 @@
 .my-info {
     @include flexbox(flex, column, center);
     flex-wrap: wrap;
+    align-items: center;
     padding-left: map-get($estiloscomunes, separacion);
     font-size: 1em;
     padding: 20px;
