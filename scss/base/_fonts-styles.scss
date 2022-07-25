@@ -1,6 +1,8 @@
 /* Tipo de letra para el menú */
 /*Utilizo el extend _estilodefuente*/
 
+
+/*Estilo de fuente para el Navbar*/
 .my-font {
     font-family: 'Orbitron', sans-serif;
     @extend %estilodefuente;
@@ -15,10 +17,18 @@
 
 /* Tipo de letra para el footer */
 
+.my-font-titles {
+    font-family: 'Nunito Sans';
+}
+
+
+/*Estilo de fuente para los párrafos*/
 .my-fontp {
     font-family: 'Nunito', sans-serif;
     @extend %estilodefuente;
 }
+
+/*Estilo de fuente para seccion "Cómo llegar" en Contacto*/
 
 .my-font2 {
     text-decoration: none;

@@ -1,3 +1,5 @@
+/*Modifico el estilo para el iframe de Google Maps para lograr su comportamiento Responsive*/
+
 .mapa {
     overflow:hidden;
     padding-bottom:50%;
@@ -14,6 +16,8 @@
     
     }
 }  
+
+/*Media query para la Información de contacto*/
 
 .my-info {
     @include flexbox(flex, column, flex-start);
@@ -57,9 +61,13 @@
     
 }
 
+/*Tamaño de letra para títulos */
+
 .contact-title {
     font-size: 2.5em;
 }
+
+/*Estilo para Logo completo de la Empresa */
 
 .contact-logo {
     width: 35vw;
@@ -67,7 +75,9 @@
     padding-top: 10px;
         
 }
-    
+
+/*Círculo que envuelve la imagen en Contacto y en Soporte */
+
 .contact-radius {
     background-color: white;
     width: 200px;
@@ -79,17 +89,11 @@
     margin-bottom: 10px;
 }
 
+/*Dimensiones de la imagen para secciones Contacto y Soporte*/
+
     .contact-img {
         padding-top: 20px;
         width: map-get($estiloscomunes, ancho);
                 
     }
     
-    
-    .contact-img2 {
-        width: 20vw;
-        max-width: 450px;
-        min-width: 150px;
-        
-        
-    }

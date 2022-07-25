@@ -1,64 +1,42 @@
+/*Estilo para el logo flotante de Whatsapp*/
+
 .wa-logo {
-    width: 70px;
-    position: fixed;
-    right: 10px;
-    bottom: 100px;
-    z-index: 1500;
-  }
+  width: 70px;
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  z-index: 150;
+}
 
-  .wa-logo2 {
-    width: 5vw;
-    min-width: 50px;
-    padding-left: 20px;
-    
-  }
+/*Dimensiones del logo de Whatsapp en sección Contacto*/
 
-/* Agrego una animación al Logo de Whatsapp para que varíe la transparencia */
-
-.animacion {
-    /* Nombre + duración */
-    animation: changeLogo 4s;
-    animation-iteration-count: infinite;
+.wa-logo2 {
+  width: 5vw;
+  min-width: 50px;
+  padding-left: 20px;
     
 }
 
-/* @ + Nombre de la animación */
-@keyframes changeLogo {
-    0% {
-        opacity: .4;
-    }
-
-    15% {
-        opacity: .5;
-    }
-
-    25% {
-
-        opacity: .6;
-    }
-
-    50% {
-        opacity: .75;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
+/*Estilos para Logo de Teamviewer y Anydesk*/
 
 .Logo {
-    min-width: 40px;
-    width: 4vw;
-    padding: 5px;
+  min-width: 40px;
+  width: 4vw;
+  padding: 5px;
 }
 
+/*Estilo del Logo de la empresa para el Navbar*/
+
 .nav-Logo {
-    width: 5vw;
-    min-width: 60px;
+  width: 5vw;
+  min-width: 60px;
     
 }
 
-.btn-tse{
+/*Estilos para botones */
+
+.btn-tse {
     @extend %botones;
+    border: none;
   }
   

@@ -6,7 +6,7 @@
     margin-right: map-get($estiloscomunes, margen);
     margin-bottom: map-get($estiloscomunes, margen);
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
 
     &:hover {       /* Efecto sobre cada imagen al pasar el mouse */
@@ -17,6 +17,3 @@
     }
 }
 
-.zindex {
-    z-index: 0 !important;
-}
