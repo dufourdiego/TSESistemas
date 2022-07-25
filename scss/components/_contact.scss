@@ -1,3 +1,5 @@
+/*Modifico el estilo para el iframe de Google Maps para lograr su comportamiento Responsive*/
+
 .mapa {
     overflow:hidden;
     padding-bottom:50%;
@@ -15,19 +17,84 @@
     }
 }  
 
+/*Media query para la Información de contacto*/
+
 .my-info {
-    @include flexbox(flex, row, flex-start);
+    @include flexbox(flex, column, center);
     flex-wrap: wrap;
+    align-items: center;
     padding-left: map-get($estiloscomunes, separacion);
+    font-size: 1em;
+    padding: 20px;
 
     @media screen and (min-width: 480px){
-        justify-content: space-around;
+        @include flexbox(flex, row, space-around);
+        
         
     }
+}
+
+.my-infowa {
+    font-size: 2em;
 }
 
 .contact-map {
     @include flexbox(flex, column, flex-start);
     padding: 20px 40px;
-  }
+}
   
+.contacto {
+    width: 40vw;
+    margin: auto;
+}
+
+.contacto-img {
+    width: 30vw;
+    max-width: 400px;
+    object-fit: cover;
+   
+}
+
+
+.contact-page {
+    @include flexbox(flex, column, center);
+    align-items: center;
+    
+}
+
+/*Tamaño de letra para títulos */
+
+.contact-title {
+    font-size: 2.5em;
+}
+
+/*Estilo para Logo completo de la Empresa */
+
+.contact-logo {
+    width: 35vw;
+    min-width: 300px;
+    padding-top: 10px;
+        
+}
+
+/*Círculo que envuelve la imagen en Contacto y en Soporte */
+
+.contact-radius {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 4px 4px gray;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/*Dimensiones de la imagen para secciones Contacto y Soporte*/
+
+    .contact-img {
+        padding-top: 20px;
+        width: map-get($estiloscomunes, ancho);
+                
+    }
+    

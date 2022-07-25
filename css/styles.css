@@ -1,6 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Orbitron&family=Poppins:ital,wght@0,200;1,400&display=swap"); /* Tipo de letra para el menú */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@300&family=Orbitron&family=Poppins:ital,wght@0,200;1,400&display=swap"); /* Tipo de letra para el menú */
 /*Utilizo el extend _estilodefuente*/
+/*Estilo de fuente para el Navbar*/
 .my-font {
   font-family: "Orbitron", sans-serif;
   opacity: 0.6;
@@ -11,8 +12,22 @@
 }
 
 /* Tipo de letra para el footer */
+.my-font-titles {
+  font-family: "Nunito Sans";
+}
+
+/*Estilo de fuente para los párrafos*/
 .my-fontp {
   font-family: "Nunito", sans-serif;
+}
+
+/*Estilo de fuente para seccion "Cómo llegar" en Contacto*/
+.my-font2 {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 20px;
+  color: black;
+  font-size: 1.3em;
 }
 
 .my-font, .my-fontp {
@@ -31,25 +46,36 @@
 
 /* Defino color de fondo, posición y padding del body */
 body {
-  background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4);
-  min-height: 100vh;
+  background: linear-gradient(to left, #cecedc, #cdd5e6, #d7e4e3);
   position: relative;
-  padding-top: 18vh;
+  min-height: 100vh;
+  padding-top: 100px;
 }
 
+/*Estilos para cada artículo de la página principal*/
 .articulo {
   width: 25vw;
   background-color: #FFF;
   margin: auto;
-  padding: 5px;
+  padding: 7px;
   border: 1px solid #7f7fd5;
+  border-radius: 10px;
   margin-top: 10px;
+  overflow: hidden;
+}
+.articulo img { /*Transicion sobre las imágenes de los artículos*/
+  border-radius: 10px;
+  transition: transform 1s ease;
+}
+.articulo img:hover { /*Al pasar el mouse sobre la imagen la agranda un 10% */
+  transform: scale(1.1);
 }
 
 .tarjeta {
-  padding: 5px;
+  padding: 10px;
 }
 
+/*Defino las Media Query para mostrar un artículo debajo del otro en vista Mobile*/
 @media screen and (max-width: 768px) {
   .contenedor-flex {
     display: flex;
@@ -65,6 +91,7 @@ body {
     bottom: 80px;
   }
 }
+/*Defino las Media Query para mostrar un artículo al lado del otro en vista Desktop*/
 @media screen and (min-width: 769px) {
   .contenedor-flex {
     display: flex;
@@ -80,7 +107,8 @@ body {
   height: 35vh;
   margin-right: 10px;
   margin-bottom: 10px;
-  border: 1px solid rgb(15, 15, 118);
+  border: 2px solid white;
+  border-radius: 10px;
   object-fit: cover;
 }
 .galeria img:hover { /* Efecto sobre cada imagen al pasar el mouse */
@@ -88,64 +116,41 @@ body {
   opacity: 0.6;
 }
 
-/* Creo el círculo para colocar el Logo de Whatsapp abjo a la derecha de cada página */
-.wa-btn {
+/*Estilo para el logo flotante de Whatsapp*/
+.wa-logo {
+  width: 70px;
   position: fixed;
-  width: 60px;
-  height: 60px;
-  line-height: 55px;
+  right: 10px;
   bottom: 100px;
-  right: 6px;
-  background: #20ba5a;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 50px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 100;
-  transition: all 0.5s ease;
-}
-.wa-btn:hover { /* Agrego una transición para invertir el color del Logo al pasar el mouse */
-  background-color: white;
-  color: #20ba5a;
+  z-index: 150;
 }
 
-/* Agrego una animación al Logo de Whatsapp para que varíe la transparencia */
-.animacion {
-  /* Nombre + duración */
-  animation: changeLogo 4s;
-  animation-iteration-count: infinite;
+/*Dimensiones del logo de Whatsapp en sección Contacto*/
+.wa-logo2 {
+  width: 5vw;
+  min-width: 50px;
+  padding-left: 20px;
 }
 
-/* @ + Nombre de la animación */
-@keyframes changeLogo {
-  0% {
-    opacity: 0.4;
-  }
-  15% {
-    opacity: 0.5;
-  }
-  25% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+/*Estilos para Logo de Teamviewer y Anydesk*/
 .Logo {
-  min-width: 35px;
-  width: 3vw;
+  min-width: 40px;
+  width: 4vw;
   padding: 5px;
 }
 
+/*Estilo del Logo de la empresa para el Navbar*/
 .nav-Logo {
   width: 5vw;
   min-width: 60px;
 }
 
+/*Estilos para botones */
+.btn-tse {
+  border: none;
+}
+
+/*Modifico el estilo para el iframe de Google Maps para lograr su comportamiento Responsive*/
 .mapa {
   overflow: hidden;
   padding-bottom: 50%;
@@ -161,17 +166,27 @@ body {
   padding-left: 20px;
 }
 
+/*Media query para la Información de contacto*/
 .my-info {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
   padding-left: 20px;
+  font-size: 1em;
+  padding: 20px;
 }
 @media screen and (min-width: 480px) {
   .my-info {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
+}
+
+.my-infowa {
+  font-size: 2em;
 }
 
 .contact-map {
@@ -179,6 +194,54 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 40px;
+}
+
+.contacto {
+  width: 40vw;
+  margin: auto;
+}
+
+.contacto-img {
+  width: 30vw;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Tamaño de letra para títulos */
+.contact-title {
+  font-size: 2.5em;
+}
+
+/*Estilo para Logo completo de la Empresa */
+.contact-logo {
+  width: 35vw;
+  min-width: 300px;
+  padding-top: 10px;
+}
+
+/*Círculo que envuelve la imagen en Contacto y en Soporte */
+.contact-radius {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 4px 4px gray;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/*Dimensiones de la imagen para secciones Contacto y Soporte*/
+.contact-img {
+  padding-top: 20px;
+  width: 100%;
 }
 
 * {

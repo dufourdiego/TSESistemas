@@ -1,27 +1,43 @@
 /* Defino color de fondo, posición y padding del body */
 
 body {
-    background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4); 
-    min-height: 100vh;
+    background: linear-gradient(to left, #cecedc, #cdd5e6, #d7e4e3); 
     position: relative;
-    padding-top: 18vh;
+    min-height: 100vh;
+    padding-top: 100px;
     
 }
+
+/*Estilos para cada artículo de la página principal*/
 
 .articulo {
     width: 25vw;
     background-color: #FFF;
     margin: auto;
-    padding: 5px;
+    padding: 7px;
     border: 1px solid #7f7fd5;
+    border-radius: 10px;
     margin-top: 10px;
-  }
+    overflow: hidden;
+
+    & img {           /*Transicion sobre las imágenes de los artículos*/
+      border-radius: 10px;
+      transition: transform 1s ease;
+
+    
+      &:hover{        /*Al pasar el mouse sobre la imagen la agranda un 10% */
+        transform: scale(1.1);
+        }
+    }
+}
+
+.tarjeta {
+    padding: 10px;
+}
+
+/*Defino las Media Query para mostrar un artículo debajo del otro en vista Mobile*/
   
-  .tarjeta {
-    padding: 5px;
-  }
-  
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contenedor-flex {
       @include flexbox(flex, column, center);
       padding: 5px;
@@ -34,9 +50,11 @@ body {
     .wa-btn {
       bottom: 80px;
     }
-    }
+}
+
+/*Defino las Media Query para mostrar un artículo al lado del otro en vista Desktop*/
   
-  @media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .contenedor-flex {
     @include flexbox(flex, row, center);
     padding: 5px;
