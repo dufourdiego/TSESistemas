@@ -20,7 +20,7 @@
 /*Media query para la Información de contacto*/
 
 .my-info {
-    @include flexbox(flex, column, flex-start);
+    @include flexbox(flex, column, center);
     flex-wrap: wrap;
     padding-left: map-get($estiloscomunes, separacion);
     font-size: 1em;
